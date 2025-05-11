@@ -1,21 +1,18 @@
-version: 1.0
 
-metadata:
-  name: user-service performance test
-  tags: [auth, critical, perf]
-  description: Test the performance of user-service under load.
-  testScript: ./scripts/run-perf-test.sh
+tags:
+  - name: spring-boot
+    version: "3.4.5"
+  - name: java
+    version: "21"
+  - name: rest
+    version: ""
+
+
 
 services:
-  - name: user-service
-    context: ./user-service
+  - name: simple-spring-rest-app
     dockerfile: Dockerfile
-    image: my-registry.com/user-service:perf-test
-    tags: [backend, java, spring]
-    buildArgs:
-      ENV: perf
-      DEBUG: "false"
-  
-  - name: redis
-    image: redis:7.2
-    tags: [cache, infra]
+    expose-ports:
+      - 8080
+
+
