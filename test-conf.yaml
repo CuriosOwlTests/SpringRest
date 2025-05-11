@@ -1,13 +1,7 @@
-
 tags:
-  - name: spring-boot
-    version: "3.4.5"
-  - name: java
-    version: "21"
-  - name: rest
-    version: ""
-
-
+  spring-boot: "3.4.5"
+  java: "21"
+  rest: ""
 
 services:
   - name: simple-spring-rest-app
