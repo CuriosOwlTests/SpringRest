@@ -1,5 +1,6 @@
 tags:
   spring-boot: "3.4.5"
+  webflux: "6.2.6"
   java: "21"
   rest: ""
 
